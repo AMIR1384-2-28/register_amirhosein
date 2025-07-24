@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Manage VsCode/register/main.css" />
+    <script
+      src="https://kit.fontawesome.com/5c7c400a13.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h2 class="h2">wellcome to my site</h2>
+    <div class="totalForm">
+      <div class="form" id="form">
+        <h3 class="formH3">register form</h3>
+        <div class="inputs">
+          <input type="text" id="name" class="name input" placeholder="name" />
+          <input
+            type="text"
+            id="family"
+            class="family input"
+            placeholder="family"
+          />
+          <input
+            type="email"
+            id="email"
+            class="email input"
+            placeholder="email"
+          />
+          <input type="text" id="job" class="job input" placeholder="job" />
+          <input
+            type="number"
+            id="phone"
+            class="phone input"
+            placeholder="phone"
+          />
+        </div>
+        <div class="option">
+          <select id="sex" class="select">
+            <option selected disabled value="">select your sex</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+          </select>
+        </div>
+        <div class="buttons">
+          <button class="add" id="add">add</button>
+          <button class="show" id="show">show all users</button>
+          <button class="find" id="find">find by email</button>
+          <button class="question" id="question">ask your own question</button>
+        </div>
+      </div>
+      <div class="showForm Action" id="showForm">
+        <div class="showHeader">
+          <h3 class="showH3">everyone who has registered</h3>
+          <i class="icon fa-solid fa-right-from-bracket" id="showIcon"></i>
+        </div>
+        <ol class="showOl" id="showOl"></ol>
+      </div>
+      <div class="findForm Action" id="findForm">
+        <div class="header">
+          <h3 class="findH3">please enter your email to find</h3>
+          <i class="icon fa-solid fa-right-from-bracket" id="findIcon"></i>
+        </div>
+        <div class="fI">
+          <input
+            type="email"
+            id="findInput"
+            class="findInput input"
+            placeholder="email"
+          />
+        </div>
+        <div class="fB">
+          <button class="findBtn" id="findBtn">find</button>
+        </div>
+        <h4 id="emailH4" class="emailH4"></h4>
+      </div>
+      <div class="questionForm Action" id="questionForm">
+        <div class="qheader">
+          <h3 class="questionH3">please ask your quesiton</h3>
+          <i class="icon fa-solid fa-right-from-bracket" id="questionIcon"></i>
+        </div>
+        <div class="qbuttons">
+          <button class="q_male" id="q_male">is there a man here?</button>
+          <button class="q_job" id="q_job">does anyone have a job?</button>
+        </div>
+        <p class="questionP" id="questionP">choose</p>
+        <div class="jobAction" id="olDiv">
+          <ol class="actionOl" id="questionJobOL"></ol>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/Manage VsCode/register/main.js"></script>
+</html>
